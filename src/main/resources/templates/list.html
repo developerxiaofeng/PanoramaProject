@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-1.11.0.min.js"></script>
+
+
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<h4>全景图列表</h4>
+<table class="table table-striped" border="1">
+    <tr>
+        <td>编号</td>
+        <th>全景图的名称</th>
+    </tr>
+    <!--<span th:text="${list}"> </span>-->
+    <tr  th:each="panoramaDO,panoramaDOStat : ${list}">
+        <th th:text="${panoramaDOStat.index}"></th>
+        <td ><a th:href="${panoramaDO.id}+'/temp/'" th:text="${panoramaDO.title}"/> </td>
+    </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h2>全景图合成成功</h2>
+<div><img th:src="${imgUrl}" width="60%" height="30%"/></div>
+<div><a th:href="'/compound/'+${fileName}+'/'+${title}">切割全景图展示</a></div>
+</body>
+</html>

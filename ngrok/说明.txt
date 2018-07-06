@@ -1,0 +1,11 @@
+配置：复制/src/main/resources/application.yml.template 生成application.yml文件，根据自己需要填写相关配置（需要注意的是：yml文件内的属性冒号后面的文字之前需要加空格，可参考已有配置，否则属性会设置不成功）；
+运行Java程序：com.github.binarywang.demo.wechat.WxMpDemoApplication；
+打开shell或cmd，进入ngrok目录，运行 ngrok -config ngrok.cfg -subdomain my-domain 8080 如果运行失败，请更换my-domain为其它字符串，直至连接成功；
+配置微信公众号中的接口地址：http://my-domain.tunnel.qydev.com/wechat/portal （注意my-domain要跟上面的一致，需要符合微信官方的要求）；
+根据自己需要修改各个handler的实现，加入自己的业务逻辑。
+
+
+"toUser":"gh_6a60520f3d6c","fromUser":"ocpM-0lkCSePxkd88KTrT7lgaiHo","createTime":1527212714,"msgType":"text","content":"收拾","msgId":6559328661086234068,"scanCodeInfo":{},"sendPicsInfo":{"picList":[]},"sendLocationInfo":{},"hardWare":{}
+
+"toUser":"gh_6a60520f3d6c","fromUser":"ocpM-0lkCSePxkd88KTrT7lgaiHo","createTime":1527212630,"msgType":"image","msgId":6559328300308981192,"picUrl":"http://mmbiz.qpic.cn/mmbiz_jpg/O7EUYBdj1qfo8VXlygOicFib0ucTwETvy8s6eWjH3z8pOgK2HiaLHgyZwiaMZialIIORxZ6bQllx5p8YqSqNT6wZG4Q/0","mediaId":"ndpPIPlSIHx3lm2MmDW0KqdPna0hScIRWNqe6reoY31OkkBTeDi-agvNJsun0vjA","scanCodeInfo":{},"sendPicsInfo":{"picList":[]},"sendLocationInfo":{},"hardWare":{}
+

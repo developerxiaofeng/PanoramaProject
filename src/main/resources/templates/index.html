@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div >
+    常用地址信息：
+    <!--<a th:src="${vid}+','+${title}+','+${uploadId}"></a>-->
+
+    <span th:text="${vid}"></span>
+</div>
+<script th:src="'/vshow/'+${vid}+'/tour.js'"></script>
+</body>
+</html>
